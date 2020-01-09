@@ -1,3 +1,6 @@
-const usuarios = ['Eren', 'Mikasa', 'Armin'];
+import React from 'react';
+import { render } from 'react-dom';
 
-usuarios.forEach(u => console.log(u));
+import App from './App';
+
+render(<App/>, document.getElementById('app'));
