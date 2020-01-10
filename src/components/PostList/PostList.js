@@ -1,32 +1,13 @@
 import React, { Component } from 'react';
 
 import Post from '../Post/Post';
+import { Posts } from '../../db/PostsMock';
 
 // import { Container } from './styles';
 
 export default class PostList extends Component {
   state = {
-    posts: [
-      {
-        id: 1,
-        author: {
-          name: "Julio Alcantara",
-          avatar: "http://url-da-imagem.com/imagem.jpg"
-        },
-        date: "04 Jun 2019",
-        content: "Pessoal, alguém sabe se a Rocketseat está contratando?",
-        comments: [
-          {
-            id: 1,
-            author: {
-              name: "Diego Fernandes",
-              avatar: "http://url-da-imagem.com/imagem.jpg"
-            },
-            content: "Conteúdo do comentário"
-          }
-        ]
-      },
-    ]
+    posts: Posts,
   };
 
   componentDidMount() {
@@ -37,6 +18,7 @@ export default class PostList extends Component {
   render() {
     return (
       <>
+        <h1>PostList</h1>
         <ul>
           {this.state.posts.map(p => <Post key={p.id} data={p} />)}
         </ul>
