@@ -8,11 +8,11 @@ class Header extends Component {
   }
   render() {
     return (
-      <header class="header">
-        <h1 class="social-name">
+      <header className="header">
+        <h1 className="social-name">
           facebook
         </h1>
-        <span class="action-header">
+        <span className="action-header">
           Meu perfil (icon)
         </span>
       </header>

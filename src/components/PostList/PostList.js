@@ -13,7 +13,7 @@ export default class PostList extends Component {
   render() {
     return (
       <>
-        <div class="post-list">
+        <div className="post-list">
           {this.state.posts.map(p => <Post key={p.id} data={p} />)}
         </div>
       </>

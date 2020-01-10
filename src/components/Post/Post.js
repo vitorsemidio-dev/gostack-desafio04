@@ -7,8 +7,8 @@ import './Post.css';
 export default function Post({ data }) {
 
   return (
-    <div class="post">
-      <div class="post-header">
+    <div className="post">
+      <div className="post-header">
         <div className="avatar-user">
 
         </div>
