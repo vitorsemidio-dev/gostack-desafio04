@@ -2,18 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types'
 
 import Comment from '../Comment/Comment';
+import './Post.css';
 
 export default function Post({ data }) {
 
   return (
-    <>
-      <h1>POST</h1>
-      <div>
-        <h3>{data.author.name}</h3>
-        <p>{data.content}</p>
+    <div class="post">
+      <div class="post-header">
+        <div className="avatar-user">
+
+        </div>
+        <div>
+          <span className="post-author-name">{data.author.name}</span>
+          <small>{data.date}</small>
+        </div>
       </div>
+      <p className="post-content">{data.content}</p>
       {data.comments.map(c => <Comment key={c.id} data={c} />)}
-    </>
+    </div>
   );
 }
 
