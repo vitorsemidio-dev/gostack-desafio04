@@ -8,8 +8,13 @@ class Header extends Component {
   }
   render() {
     return (
-      <header>
-        {this.state.animes.map(a => <span key={a}>{a}</span>)}
+      <header class="header">
+        <h1 class="social-name">
+          facebook
+        </h1>
+        <span class="action-header">
+          Meu perfil (icon)
+        </span>
       </header>
     )
   }

@@ -1,4 +1,17 @@
-header {
+.header {
   width: 100%;
-  background-color: white;
+  background-color: rgb(41, 72, 125);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.social-name {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.action-header {
+  margin-right: 10px;
 }
