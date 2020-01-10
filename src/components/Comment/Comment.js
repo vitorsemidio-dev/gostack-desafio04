@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 export default function Comment({ data }) {
@@ -16,4 +17,8 @@ export default function Comment({ data }) {
       </div>
     </>
   );
+}
+
+Comment.propTypes = {
+  data: PropTypes.object.isRequired,
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
 import Comment from '../Comment/Comment';
 
@@ -14,4 +15,8 @@ export default function Post({ data }) {
       {data.comments.map(c => <Comment key={c.id} data={c} />)}
     </>
   );
+}
+
+Post.prototype = {
+  data: PropTypes.object.isRequired,
 }

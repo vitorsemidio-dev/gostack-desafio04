@@ -64,4 +64,15 @@ export const Posts = [
       },
     ]
   },
+  {
+    id: 4,
+    author: {
+      name: "Sasha Braus",
+      avatar: "http://url-da-imagem.com/imagem.jpg"
+    },
+    date: "04 Jun 2019",
+    content: "Alguéms sabe onde tem batata?",
+    comments: [
+    ]
+  },
 ]
