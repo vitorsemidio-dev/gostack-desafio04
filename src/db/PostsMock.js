@@ -71,7 +71,7 @@ export const Posts = [
       avatar: "http://url-da-imagem.com/imagem.jpg"
     },
     date: "04 Jun 2019",
-    content: "Alguéms sabe onde tem batata?",
+    content: "Alguém sabe onde tem batata?",
     comments: [
     ]
   },
